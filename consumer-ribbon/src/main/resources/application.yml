@@ -1,9 +1,9 @@
 server:
-  port: 8810
+  port: 8820
 
 spring:
   application:
-    name: service-demo
+    name: consumer-ribbon
 
 eureka:
   client:
