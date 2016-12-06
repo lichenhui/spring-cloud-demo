@@ -2,6 +2,7 @@ package cn.lichenhui.spring.cloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 import java.nio.file.Files;
@@ -13,6 +14,7 @@ import java.nio.file.Paths;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
+@EnableCircuitBreaker
 public class ConsumerApp {
 
     private static final String EGD_KEY = "java.security.egd";
