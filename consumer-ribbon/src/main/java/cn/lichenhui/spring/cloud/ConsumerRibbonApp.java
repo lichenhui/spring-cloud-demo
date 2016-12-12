@@ -15,7 +15,7 @@ import java.nio.file.Paths;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableCircuitBreaker
-public class ConsumerApp {
+public class ConsumerRibbonApp {
 
     private static final String EGD_KEY = "java.security.egd";
     private static final String URANDOM = "/dev/urandom";
@@ -25,6 +25,6 @@ public class ConsumerApp {
             // make Tomcat startup faster
             System.setProperty(EGD_KEY, "file://" + URANDOM);
         }
-        SpringApplication.run(ConsumerApp.class, args);
+        SpringApplication.run(ConsumerRibbonApp.class, args);
     }
 }

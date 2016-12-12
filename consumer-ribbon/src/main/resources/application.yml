@@ -6,6 +6,8 @@ spring:
     name: consumer-ribbon
 
 eureka:
+  eureka:
+    instance:
   client:
     serviceUrl:
       defaultZone: http://localhost:8800/eureka/
