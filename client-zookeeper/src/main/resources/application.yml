@@ -8,10 +8,9 @@ spring:
     zookeeper:
       discovery:
         register: false
+      connect-string: localhost:2181
       dependencies:
-        service-zookeeper:
+        - service-zookeeper:
           required: true
           path: /service-zookeeper
-      connect-string: localhost:2181
-
-
+          loadBalancerType: ROUND_ROBIN

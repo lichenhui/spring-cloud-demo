@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>cn.lichenhui.spring.cloud</groupId>
-	<artifactId>consumer-zookeeper</artifactId>
+	<artifactId>client-zookeeper</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>consumer-zookeeper</name>
+	<name>client-zookeeper</name>
 	<description>Demo project for Spring cloud zookeeper</description>
 
 	<parent>
