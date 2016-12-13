@@ -15,7 +15,7 @@ import java.nio.file.Paths;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
-public class App {
+public class EurekaClientApp {
     private static final String EGD_KEY = "java.security.egd";
     private static final String URANDOM = "/dev/urandom";
 
@@ -24,6 +24,6 @@ public class App {
             // make Tomcat startup faster
             System.setProperty(EGD_KEY, "file://" + URANDOM);
         }
-        SpringApplication.run(App.class, args);
+        SpringApplication.run(EurekaClientApp.class, args);
     }
 }

@@ -10,9 +10,9 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 @EnableDiscoveryClient
 @EnableCircuitBreaker
 @EnableFeignClients
-public class ConsumerZookeeperApplication {
+public class ClientZookeeperApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ConsumerZookeeperApplication.class, args);
+		SpringApplication.run(ClientZookeeperApplication.class, args);
 	}
 }

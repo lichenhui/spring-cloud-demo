@@ -3,11 +3,12 @@ server:
 
 spring:
   application:
-    name: consumer-zookeeper
+    name: client-zookeeper
   cloud:
     zookeeper:
       discovery:
         register: false
+        root: /spring-cloud-service
       connect-string: localhost:2181
       dependencies:
         - service-zookeeper:
